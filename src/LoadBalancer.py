@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 Author: Kim Kiogora <kimkiogora@gmail.com>
 Usage : Sample Impl of a load balancing lists (dummy queues)
