@@ -42,7 +42,7 @@ class LoadBalancer:
         
         #restructure the queues
         print "Copying queue"
-        copy_of_queues = queues[:]
+        #copy_of_queues = queues[:]
         
         print "Done. Format queue and repopulate data"        
 
@@ -52,7 +52,7 @@ class LoadBalancer:
         "Formatted list"
         print "Formatted queues"
         print queues
-        #[queues.append(10) for s in range(f_len*per_queue)]
+        
         for n,v in enumerate(queues):
             for n in range(int(share)):
                 v.append(10)
@@ -70,7 +70,8 @@ class LoadBalancer:
         
         print "Final load balanced queues"    
         print queues
-            
+        
+        self.balanced_queues = queues
         return self.balanced_queues
 
 
