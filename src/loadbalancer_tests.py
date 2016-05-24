@@ -6,7 +6,7 @@ Balancer Unit Tests Class
 Author: Kim Kiogora <kimkiogora@gmail.com>
 Usage : Sample Impl of a load balancing lists (dummy queues)
 """
-from LoadBalancer import LoadBalancer
+from LoadBalancer import Balancer
 
 queue_n1=[10,10,10,10]
 queue_n2=[10]
