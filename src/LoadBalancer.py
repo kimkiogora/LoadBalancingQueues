@@ -2,27 +2,10 @@
 """
 Author: Kim Kiogora <kimkiogora@gmail.com>
 Usage : Sample Impl of a load balancing lists (dummy queues)
+
+Class to load balance queues
 """
-
-import itertools
-
-queue_n1=[10,10,10,10]
-queue_n2=[10]
-queue_n3=[10,10,10,10,10,10]
-
-
-all_queues = []
-all_queues.append(queue_n1)
-all_queues.append(queue_n2)
-all_queues.append(queue_n3)
-
-print "All queues"
-print all_queues
-
-
-
-"""Class to load balance queues"""
-class LoadBalancer:
+class Balancer:
     global balanced_queues
 
     def __init__(self):
@@ -73,10 +56,3 @@ class LoadBalancer:
         
         self.balanced_queues = queues
         return self.balanced_queues
-
-
-load_balancer = LoadBalancer()
-result = load_balancer.balance(all_queues);
-
-print "Balanced Queues"
-print result
