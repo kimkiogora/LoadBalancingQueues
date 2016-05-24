@@ -59,6 +59,9 @@ class LoadBalancer:
 
         print "Equally distributed queues"            
         print queues
+        if remainder == 0:
+            self.balanced_queues = queues
+            return self.balanced_queues
 
         if remainder == 1:
             queues[0].append(10)
