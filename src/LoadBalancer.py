@@ -41,10 +41,7 @@ class LoadBalancer:
         print "Each queue will process {0} transaction(s). The remainder {1} will be added to the first {1} queues".format(share,remainder)
         
         #restructure the queues
-        print "Copying queue"
-        #copy_of_queues = queues[:]
-        
-        print "Done. Format queue and repopulate data"        
+        print "Format queue and repopulate data"        
 
         for n,v in enumerate(queues):
             del v[:]
