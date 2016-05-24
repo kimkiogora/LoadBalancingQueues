@@ -1,3 +1,0 @@
-"""
-Balancer class
-"""
