@@ -21,7 +21,7 @@ all_queues.append(queue_n3)
 print "All queues"
 print all_queues
 
-load_balancer = LoadBalancer()
+load_balancer = Balancer()
 result = load_balancer.balance(all_queues);
 
 print "Balanced Queues"
